@@ -1,0 +1,97 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "react-app/jest",
+    "plugin:react/jsx-runtime"
+  ],
+
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+
+  "rules": {
+    // Base
+    "brace-style": [
+      "error",
+      "stroustrup"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "import/prefer-default-export": "off",
+
+    // jsx-a11y
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      { "assert": "htmlFor" }
+    ],
+
+    // Typescript
+    "@typescript-eslint/brace-style": [
+      "error",
+      "stroustrup"
+    ],
+    "@typescript-eslint/comma-dangle": [
+      "error",
+      "never"
+    ],
+    "@typescript-eslint/indent": [
+      "error",
+      2,
+      {
+        "ignoredNodes": [
+          "PropertyDefinition[decorators]",
+          "TSUnionType",
+          "TSTypeParameterInstantiation",
+          "TSIntersectionType"
+        ]
+      }
+    ],
+
+    // React
+    "react/function-component-definition": [
+      "error",
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    "react/jsx-props-no-spreading": [
+      "error",
+      {
+        "html": "ignore",
+        "custom": "enforce",
+        "explicitSpread": "enforce",
+        "exceptions": [
+          "Component"
+        ]
+      }
+    ],
+    "react/prop-types": "off"
+  },
+
+  "overrides": [
+    {
+      "files": [
+        "**/*.stories.*"
+      ],
+      "rules": {
+        "import/no-extraneous-dependencies": "off",
+        "import/no-anonymous-default-export": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/prop-types": "off"
+      }
+    },
+    {
+      "files": [
+        "**/*.test.*",
+        "**/*.spec.*"
+      ],
+      "rules": {
+        "react/jsx-props-no-spreading": "off"
+      }
+    }
+  ]
+}

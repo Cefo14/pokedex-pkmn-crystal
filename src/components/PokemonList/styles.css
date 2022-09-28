@@ -1,0 +1,22 @@
+.PokemonList__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: var(--spacing);
+}
+
+.PokemonList__item {
+  width: calc(100% / 3 - 11px);
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+  align-content: baseline;
+  
+}
+
+@media screen and (max-width: 375px) {
+  .PokemonList__item {
+    width: 100%
+  }  
+}

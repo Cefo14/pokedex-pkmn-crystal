@@ -1,0 +1,173 @@
+.PokemonCard__card {
+  position: relative;
+  width: 100%;
+  max-width: 368px;
+  height: 464px;
+
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.PokemonCard__flip-card-button {
+  all: unset;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.PokemonCard__card--flipped,
+.PokemonCard__card--flipped .PokemonCard__flip-card-button {
+  transform: rotateY(180deg);
+}
+
+.PokemonCard__card-front,
+.PokemonCard__card-back {
+  display: grid;
+  gap: calc(var(--spacing) * 0.5);
+  align-content: baseline;
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+
+  background-color: var(--primary-color);
+  border: solid 4px var(--tertiary-color);
+  padding: calc(var(--spacing) * 0.5);
+}
+
+.PokemonCard__card-back {
+  transform: rotateY(180deg);
+}
+
+.PokemonCard__title {
+  display: flex;
+  justify-content: space-between;
+  padding: calc(var(--spacing) * 0.5) var(--spacing);
+}
+
+.PokemonCard__image {
+  max-width: max-content;
+  margin: 0 auto;
+}
+
+.PokemonCard__description {
+  display: grid;
+  gap: var(--spacing);
+
+  height: 192px;
+  overflow-y: auto;
+}
+
+.PokemonCard__description > p {
+  margin: 0px;
+}
+
+.PokemonCard__text {
+  line-height: 1.6rem;
+}
+
+.PokemonCard__type-container {
+  display: flex;
+  gap: var(--spacing);
+  align-items: flex-start;
+}
+
+.PokemonCard__type {
+  color: #ffffff;
+  border: solid 2px #ffffff;
+  padding: calc(var(--spacing) * 0.5);
+}
+
+.PokemonCard__type--bug {
+  color: #adbd21;
+  border-color: #adbd21;
+}
+
+.PokemonCard__type--dark {
+  color: #735a4a;
+  border-color: #735a4a;
+}
+
+.PokemonCard__type--dragon {
+  color: #7b63e7;
+  border-color: #7b63e7;
+}
+
+.PokemonCard__type--electric {
+  color: #ffc631;
+  border-color: #ffc631;
+}
+
+.PokemonCard__type--fairy {
+  color: #f7b5f7;
+  border-color: #f7b5f7;
+}
+
+.PokemonCard__type--fire {
+  color: #f75231;
+  border-color: #f75231;
+}
+
+.PokemonCard__type--fighting {
+  color: #a55239;
+  border-color: #a55239;
+}
+
+.PokemonCard__type--flying {
+  color: #9cadf7;
+  border-color: #9cadf7;
+}
+
+.PokemonCard__type--ghost {
+  color: #6363b5;
+  border-color: #6363b5;
+}
+
+.PokemonCard__type--grass {
+  color: #7bce52;
+  border-color: #7bce52;
+}
+
+.PokemonCard__type--ground {
+  color: #d6b55a;
+  border-color: #d6b55a;
+}
+
+.PokemonCard__type--ice {
+  color: #5acee7;
+  border-color: #5acee7;
+}
+
+.PokemonCard__type--normal {
+  color: #ada594;
+  border-color: #ada594;
+}
+
+.PokemonCard__type--poison {
+  color: #b55aa5;
+  border-color: #b55aa5;
+}
+
+.PokemonCard__type--psychic {
+  color: #ff73a5;
+  border-color: #ff73a5;
+}
+
+.PokemonCard__type--rock {
+  color: #bda55a;
+  border-color: #bda55a;
+}
+
+.PokemonCard__type--steel {
+  color: #adadc6;
+  border-color: #adadc6;
+}
+
+.PokemonCard__type--water {
+  color: #399cff;
+  border-color: #399cff;
+}

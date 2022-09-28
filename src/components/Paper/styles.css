@@ -1,0 +1,5 @@
+.Paper__root {
+  background-color: var(--secondary-color);
+  border: solid 2px var(--secondary-contrast-color);
+  padding: var(--spacing);
+}

@@ -1,0 +1,49 @@
+:root {
+  --breakpoint-xl: 1200px;
+  --breakpoint-lg: 992px;
+  --breakpoint-md: 768px;
+  --breakpoint-sm: 576px;
+  --breakpoint-xs: 375px;
+
+  --large-breakpoint: 1200px;
+
+  --font-size: 16px;
+  --font-family: 'Press Start 2P', cursive;
+
+  --spacing: 1rem;
+
+  --primary-color: #d75737;
+  --primary-contrast-color: #ffffff;
+
+  --secondary-color: #000000;
+  --secondary-contrast-color: #ffffff;
+
+  --tertiary-color: #90a4ae;
+  --tertiary-contrast-color: #000000;
+
+  --background-color: #181a1b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  color: var(--primary-contrast-color);
+  background-color: var(--background-color);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #202324;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #454a4d;
+}
