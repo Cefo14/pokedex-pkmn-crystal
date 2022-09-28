@@ -42,7 +42,7 @@ const Pokedex = ({
 
   const pokemonListHeight = (
     seachBoxRef.current
-      ? `calc(100vh - 2.5rem - ${seachBoxRef.current.offsetHeight}px`
+      ? `calc(100vh - 3rem - ${seachBoxRef.current.offsetHeight}px`
       : '100vh'
   );
 

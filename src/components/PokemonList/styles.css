@@ -6,7 +6,7 @@
 }
 
 .PokemonList__item {
-  width: calc(100% / 3 - 11px);
+  width: calc(100% / 3 - var(--spacing));
   height: 100%;
 
   display: grid;
@@ -15,8 +15,14 @@
   
 }
 
-@media screen and (max-width: 375px) {
+@media only screen and (max-width: 992px) {
   .PokemonList__item {
-    width: 100%
+    width: calc(100% / 2 - var(--spacing));
+  }  
+}
+
+@media only screen and (max-width: 576px) {
+  .PokemonList__item {
+    width: 100%;
   }  
 }
