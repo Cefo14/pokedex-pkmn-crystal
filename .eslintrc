@@ -3,7 +3,6 @@
     "airbnb",
     "airbnb/hooks",
     "airbnb-typescript",
-    "react-app/jest",
     "plugin:react/jsx-runtime"
   ],
 
@@ -85,13 +84,17 @@
       }
     },
     {
-      "files": [
-        "**/*.test.*",
-        "**/*.spec.*"
+			"files": [
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"],
+			"extends": [
+        "plugin:jest/recommended",
+        "plugin:jest-dom/recommended",
+        "plugin:testing-library/react"
       ],
       "rules": {
         "react/jsx-props-no-spreading": "off"
       }
-    }
+		}
   ]
 }

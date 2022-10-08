@@ -160,7 +160,7 @@ describe('PokemonCard Component', () => {
 
       const button = screen.getByRole('button', { name: 'flip-card' });
       userEvent.click(button);
-      expect(props.onClick).toBeCalledTimes(1);
+      expect(props.onClick).toHaveBeenCalledTimes(1);
     });
   });
 

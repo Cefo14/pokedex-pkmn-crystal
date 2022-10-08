@@ -32,7 +32,7 @@ describe('Pokedex Container', () => {
         await view;
       });
 
-      expect(fetchPokemonsSpy).toBeCalledTimes(1);
+      expect(fetchPokemonsSpy).toHaveBeenCalledTimes(1);
     });
 
     it('should render it', async () => {
