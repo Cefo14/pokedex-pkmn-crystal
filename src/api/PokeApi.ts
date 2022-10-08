@@ -17,8 +17,7 @@ export class PokeApi implements PokeApiServices {
   async fetchPokemons(): Promise<Pokemon[]> {
     const url = '/pokemon.db.json';
     const response = await this.api.get<Pokemon[]>(url);
-    const data = await PokemonSchema.array().parse(response.data);
-    return data;
+    return PokemonSchema.array().parse(response.data);
   }
 }
 

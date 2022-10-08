@@ -44,7 +44,7 @@ describe('PokemonCard Component', () => {
   });
 
   describe('when has props', () => {
-    it('should render it', () => {
+    it('should render it with props', () => {
       render(
         <PokemonCard
           {...props}
@@ -62,7 +62,7 @@ describe('PokemonCard Component', () => {
   });
 
   describe('when is front card', () => {
-    it('should render it', () => {
+    it('should render this side', () => {
       render(
         <PokemonCard
           {...props}
@@ -110,7 +110,7 @@ describe('PokemonCard Component', () => {
   });
 
   describe('when is back card', () => {
-    it('should render it', () => {
+    it('should render this side', () => {
       render(
         <PokemonCard
           {...props}

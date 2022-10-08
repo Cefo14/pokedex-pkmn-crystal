@@ -17,7 +17,7 @@ describe('PokemonImage Component', () => {
   });
 
   describe('when it has alt prop', () => {
-    it('should render it', () => {
+    it('should render it with alt prop', () => {
       const alt = faker.lorem.word();
 
       render(
@@ -32,7 +32,7 @@ describe('PokemonImage Component', () => {
   });
 
   describe('when it has src prop', () => {
-    it('should render it', () => {
+    it('should render it with src prop', () => {
       const src = faker.image.avatar();
 
       render(
@@ -63,7 +63,7 @@ describe('PokemonImage Component', () => {
   });
 
   describe('when it has filter prop', () => {
-    it('should render the filter className', () => {
+    it('should render it with the filter className', () => {
       render(
         <PokemonImage
           filter

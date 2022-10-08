@@ -19,7 +19,7 @@ describe('Paper Component', () => {
   });
 
   describe('when it has component prop', () => {
-    it('should render it', () => {
+    it('should render it with the html component', () => {
       const role = 'article';
 
       render(
@@ -35,7 +35,7 @@ describe('Paper Component', () => {
   });
 
   describe('when it has children prop', () => {
-    it('should render it', () => {
+    it('should render the children prop', () => {
       const text = faker.lorem.word();
 
       render(
@@ -51,7 +51,7 @@ describe('Paper Component', () => {
   });
 
   describe('when it has className prop', () => {
-    it('should render it', () => {
+    it('should render the className prop', () => {
       const role = 'article';
       const className = faker.lorem.word();
 

@@ -31,7 +31,7 @@ describe('Container Component', () => {
   });
 
   describe('when it has component prop', () => {
-    it('should render it', () => {
+    it('should render it with the html component', () => {
       const role = 'article';
 
       render(
@@ -87,7 +87,7 @@ describe('Container Component', () => {
   });
 
   describe('when it has children prop', () => {
-    it('should render it', () => {
+    it('should render the children prop', () => {
       const children = faker.lorem.word();
 
       render(

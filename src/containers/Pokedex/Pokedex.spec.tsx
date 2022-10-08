@@ -58,7 +58,7 @@ describe('Pokedex Container', () => {
   });
 
   describe('when user type a pokemon name', () => {
-    it('should filter the cards', async () => {
+    it('should filter the cards by name', async () => {
       const pokemons = await pokeApi.fetchPokemons();
       const [randomPokemon] = shuffle(pokemons);
 
@@ -85,7 +85,7 @@ describe('Pokedex Container', () => {
   });
 
   describe('when user type a pokemon id', () => {
-    it('should filter the cards', async () => {
+    it('should filter the cards by id', async () => {
       const pokemons = await pokeApi.fetchPokemons();
       const [randomPokemon] = shuffle(pokemons);
 
@@ -112,7 +112,7 @@ describe('Pokedex Container', () => {
   });
 
   describe('when user type a pokemon type', () => {
-    it('should filter the cards', async () => {
+    it('should filter the cards by type', async () => {
       const pokemons = await pokeApi.fetchPokemons();
       const [randomPokemon] = shuffle(pokemons);
       const [randomType] = shuffle(randomPokemon.types);

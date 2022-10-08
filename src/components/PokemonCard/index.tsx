@@ -11,8 +11,7 @@ import './styles.css';
 
 const capitalizeWord = (word = '') => {
   const fistLetter = word.charAt(0);
-  const capitalizedWord = `${fistLetter.toUpperCase()}${word.slice(1)}`;
-  return capitalizedWord;
+  return `${fistLetter.toUpperCase()}${word.slice(1)}`;
 };
 
 const normalizeId = (id = 0) => (

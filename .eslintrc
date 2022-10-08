@@ -3,7 +3,8 @@
     "airbnb",
     "airbnb/hooks",
     "airbnb-typescript",
-    "plugin:react/jsx-runtime"
+    "plugin:react/jsx-runtime",
+    "plugin:sonarjs/recommended"
   ],
 
   "parserOptions": {
