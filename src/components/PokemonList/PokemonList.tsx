@@ -7,9 +7,7 @@ import clsx from 'clsx';
 
 import './styles.css';
 
-interface PokemonListPropTypes extends ComponentPropsWithoutRef<'div'> {
-
-}
+type PokemonListPropTypes = ComponentPropsWithoutRef<'div'>;
 
 const PokemonList = forwardRef<HTMLDivElement, PokemonListPropTypes>((props, ref) => (
   <div

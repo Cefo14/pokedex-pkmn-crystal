@@ -18,7 +18,7 @@ const Container = <C extends ElementType>({
   noPadding = false,
   ...props
 }: ContainerPropTypes<C>) => {
-  const Component = component || 'div' as const;
+  const Component = component ?? 'div' as const;
 
   return (
     <Component

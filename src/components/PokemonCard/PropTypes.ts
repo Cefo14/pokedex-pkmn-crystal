@@ -8,9 +8,9 @@ export type PokemonCardType = Partial<Omit<Pokemon, 'sprite' | 'flavor_text' | '
 export interface PokemonCardProps extends PokemonCardType {
   frontSprite?: string;
   backSprite?: string;
-  description?: string,
-  isFlipped?: boolean,
-  onClick?: (event: MouseEvent<HTMLButtonElement>, id: number) => void,
+  description?: string;
+  isFlipped?: boolean;
+  onClick?: (event: MouseEvent<HTMLButtonElement>, id: number) => void;
 }
 
 export const PokemonCardDefaultProps: OptionalPickRequired<PokemonCardProps> = {

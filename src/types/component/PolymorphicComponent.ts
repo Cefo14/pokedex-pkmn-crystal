@@ -6,9 +6,9 @@ import {
 
 import { PolymorphicRefAsProp } from './PolymorphicRef';
 
-type ComponentAsProp<Component extends ElementType> = {
-  component?: Component
-};
+interface ComponentAsProp<Component extends ElementType> {
+  component?: Component;
+}
 
 type PropsWithComponentAsProp<
   Component extends ElementType,
@@ -31,7 +31,7 @@ export type PolymorphicComponentPropsWithoutRef<
 
 export type PolymorphicComponentPropsWithRef<
   Component extends ElementType,
-  Props
+  Props = {}
 > = (
   PolymorphicComponentPropsWithoutRef<Component, Props>
   & PolymorphicRefAsProp<Component>

@@ -19,7 +19,7 @@ const Paper: PaperComponent = forwardRef(
     }: PaperPropTypes<C>,
     ref?: PaperRef<C>
   ) => {
-    const Component = component || 'div' as const;
+    const Component = component ?? 'div' as const;
 
     return (
       <Component

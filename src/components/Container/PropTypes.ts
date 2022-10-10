@@ -4,10 +4,10 @@ import { PolymorphicComponentPropsWithoutRef } from '../../types/component/Polym
 
 export type MaxWidthType = 'xl' | 'lg' | 'md' | 'sm' | 'xs';
 
-export type ContainerProps = {
+export interface ContainerProps {
   maxWidth?: MaxWidthType;
   noPadding?: boolean;
-};
+}
 
 export type ContainerPropTypes<Component extends ElementType> = PolymorphicComponentPropsWithoutRef<
   Component,

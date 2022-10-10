@@ -4,7 +4,7 @@ import { PokeApiServices } from '../types/service/PokeApiServices';
 import { Pokemon, PokemonSchema } from '../types/dto/Pokemon';
 
 export class PokeApi implements PokeApiServices {
-  private api: AxiosInstance;
+  private readonly api: AxiosInstance;
 
   constructor() {
     const baseURL = process.env.PUBLIC_URL;

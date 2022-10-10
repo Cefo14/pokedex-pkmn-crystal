@@ -6,7 +6,7 @@ export interface PokemonImageProps {
   src?: string;
   size?: number;
   filter?: boolean;
-  loading: 'eager' | 'lazy' | undefined
+  loading: 'eager' | 'lazy' | undefined;
 }
 
 export const PokemonImageDefaultProps: OptionalPickRequired<PokemonImageProps> = {

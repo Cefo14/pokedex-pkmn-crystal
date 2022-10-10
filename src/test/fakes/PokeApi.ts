@@ -3,7 +3,7 @@ import { Pokemon } from '../../types/dto/Pokemon';
 import { PokemonMockFactory } from '../mocks/PokemonMockFactory';
 
 export class PokeApi implements PokeApiServices {
-  private mockFactory = new PokemonMockFactory();
+  private readonly mockFactory = new PokemonMockFactory();
 
   async fetchPokemons(): Promise<Pokemon[]> {
     return [

@@ -1,7 +1,7 @@
 import cloneDeep from 'lodash/cloneDeep';
 
 export abstract class MockBuilder<T extends Object> {
-  private initialElement: T;
+  private readonly initialElement: T;
 
   private element: T;
 

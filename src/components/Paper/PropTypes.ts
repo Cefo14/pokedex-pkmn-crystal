@@ -3,13 +3,8 @@ import { ElementType, ReactElement } from 'react';
 import { PolymorphicComponentPropsWithRef } from '../../types/component/PolymorphicComponent';
 import { PolymorphicRef } from '../../types/component/PolymorphicRef';
 
-export interface PaperProps {
-
-}
-
 export type PaperPropTypes<Component extends ElementType> = PolymorphicComponentPropsWithRef<
-  Component,
-  PaperProps
+  Component
 >;
 
 export type PaperRef<C extends ElementType> = PolymorphicRef<C>;

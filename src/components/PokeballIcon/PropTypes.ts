@@ -7,7 +7,7 @@ export type IconSVG = Omit<
 >;
 
 export interface PokeballIconProps {
-  size?: string | number
+  size?: string | number;
 }
 
 export const PokeballIconDefaultProps: OptionalPickRequired<PokeballIconProps> = {

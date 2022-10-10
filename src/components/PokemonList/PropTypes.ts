@@ -10,10 +10,10 @@ type VirtuosoGridCustomProps = Omit<
 >;
 
 export interface PokemonLisPropTypes extends VirtuosoGridCustomProps {
-  pokemons: Pokemon[],
-  flippedPokemons: Set<number>,
-  onClickPokemonCard: (event: ButtonMouseEvent, id: number) => void,
-  styles: CSSProperties
+  pokemons: Pokemon[];
+  flippedPokemons: Set<number>;
+  onClickPokemonCard: (event: ButtonMouseEvent, id: number) => void;
+  styles: CSSProperties;
 }
 
 export default PokemonLisPropTypes;

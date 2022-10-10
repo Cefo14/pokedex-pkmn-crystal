@@ -5,7 +5,7 @@ import { faker } from '@faker-js/faker';
 import { PokemonMockBuilder } from './PokemonMockBuilder';
 
 export class PokemonMockFactory {
-  private builder = new PokemonMockBuilder();
+  private readonly builder = new PokemonMockBuilder();
 
   random() {
     return this.builder
