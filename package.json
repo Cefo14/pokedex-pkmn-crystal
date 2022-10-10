@@ -30,6 +30,7 @@
     "eject": "react-scripts eject",
     "lint": "eslint src --ext .ts --ext .tsx",
     "lint:fix": "eslint src --ext .ts --ext .tsx --fix",
+    "commit": "cz",
     "storybook": "start-storybook -p 6006 -s public",
     "storybook:build": "build-storybook -s public",
     "script:createPokemonDB": "node ./scripts/createPokemonDB.js"
@@ -62,6 +63,7 @@
     "@typescript-eslint/eslint-plugin": "5.13.0",
     "@typescript-eslint/parser": "5.0.0",
     "babel-plugin-named-exports-order": "0.0.2",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "8.25.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "17.0.0",
@@ -74,5 +76,10 @@
     "eslint-plugin-sonarjs": "0.15.0",
     "eslint-plugin-testing-library": "5.7.2",
     "webpack": "5.74.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
