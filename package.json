@@ -26,12 +26,13 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "test": "react-scripts test",
+    "test:staged": "react-scripts test --watchAll=false --findRelatedTests",
     "lint": "eslint src --ext .ts --ext .tsx",
     "lint:fix": "eslint src --ext .ts --ext .tsx --fix",
     "husky:prepare": "husky install",
-    "commit": "cz",
+    "commitlint:commit": "cz",
     "storybook": "start-storybook -p 6006 -s public",
     "storybook:build": "build-storybook -s public",
     "script:createPokemonDB": "node ./scripts/createPokemonDB.js"
