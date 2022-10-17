@@ -1,0 +1,13 @@
+{
+  "ignores": [
+    "@types/*",
+    "@storybook/*",
+    "@commitlint/*",
+    "@testing-library/*",
+    "babel-*",
+    "cz-conventional-changelog",
+    "lint-staged",
+    "webpack"
+  ],
+  "skip-missing": true
+}
