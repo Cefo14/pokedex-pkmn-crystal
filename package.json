@@ -30,7 +30,8 @@
     "eject": "react-scripts eject",
     "lint": "eslint src --ext .ts --ext .tsx",
     "lint:fix": "eslint src --ext .ts --ext .tsx --fix",
-    "husky:install": "husky install",
+    "husky:prepare": "husky install",
+    "commit": "cz",
     "storybook": "start-storybook -p 6006 -s public",
     "storybook:build": "build-storybook -s public",
     "script:createPokemonDB": "node ./scripts/createPokemonDB.js"
@@ -78,11 +79,7 @@
     "eslint-plugin-sonarjs": "0.15.0",
     "eslint-plugin-testing-library": "5.7.2",
     "husky": "8.0.1",
+    "lint-staged": "13.0.3",
     "webpack": "5.74.0"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
