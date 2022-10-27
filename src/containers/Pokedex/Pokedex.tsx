@@ -68,6 +68,7 @@ const Pokedex = ({
       }
 
       catch {
+        // TODO manage errors
         setPokemons([]);
       }
     };
