@@ -1,6 +1,6 @@
 import { MouseEvent } from 'react';
 
-import { OptionalPickRequired } from '../../types/OptionalPickRequired';
+import { RequirePickOptionals } from '../../types/common/RequirePickOptionals';
 import { Pokemon } from '../../types/dto/Pokemon';
 
 export type PokemonCardType = Partial<Omit<Pokemon, 'sprite' | 'flavor_text' | 'own' | 'seen'>>;
@@ -13,7 +13,7 @@ export interface PokemonCardProps extends PokemonCardType {
   onClick?: (event: MouseEvent<HTMLButtonElement>, id: number) => void;
 }
 
-export const PokemonCardDefaultProps: OptionalPickRequired<PokemonCardProps> = {
+export const PokemonCardDefaultProps: RequirePickOptionals<PokemonCardProps> = {
   id: 0,
   name: '',
   frontSprite: '',

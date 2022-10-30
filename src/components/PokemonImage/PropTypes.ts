@@ -1,5 +1,5 @@
 import { ComponentPropsWithoutRef } from 'react';
-import { OptionalPickRequired } from '../../types/OptionalPickRequired';
+import { RequirePickOptionals } from '../../types/common/RequirePickOptionals';
 
 export interface PokemonImageProps {
   alt?: string;
@@ -9,7 +9,7 @@ export interface PokemonImageProps {
   loading: 'eager' | 'lazy' | undefined;
 }
 
-export const PokemonImageDefaultProps: OptionalPickRequired<PokemonImageProps> = {
+export const PokemonImageDefaultProps: RequirePickOptionals<PokemonImageProps> = {
   alt: '',
   src: '',
   size: 200,

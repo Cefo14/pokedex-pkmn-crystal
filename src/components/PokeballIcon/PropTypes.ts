@@ -1,5 +1,5 @@
 import { ComponentPropsWithoutRef } from 'react';
-import { OptionalPickRequired } from '../../types/OptionalPickRequired';
+import { RequirePickOptionals } from '../../types/common/RequirePickOptionals';
 
 export type IconSVG = Omit<
   ComponentPropsWithoutRef<'svg'>,
@@ -10,7 +10,7 @@ export interface PokeballIconProps {
   size?: string | number;
 }
 
-export const PokeballIconDefaultProps: OptionalPickRequired<PokeballIconProps> = {
+export const PokeballIconDefaultProps: RequirePickOptionals<PokeballIconProps> = {
   size: '1rem'
 };
 

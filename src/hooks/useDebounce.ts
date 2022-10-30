@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Primitive } from '../types/Primitive';
+import { Primitive } from '../types/common/Primitive';
 
 export const useDebounce = <V extends Primitive>(value: V, delayInMS: number = 300) => {
   const [debouncedValue, setDebouncedValue] = useState<V>(value);
